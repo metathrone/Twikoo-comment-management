@@ -5885,7 +5885,7 @@ to {
                 <div class="custom-login-error" id="loginError"></div>
                 <div class="custom-input-group">
                   <i class="fa-solid fa-user custom-input-icon"></i>
-                  <input type="text" id="loginAccount" class="custom-input" placeholder="账号" autocomplete="username">
+                  <input type="text" id="loginAccount" class="custom-input" placeholder="账号 (默认: rushia)" autocomplete="username">
                 </div>
                 <div class="custom-input-group">
                   <i class="fa-solid fa-lock custom-input-icon"></i>
@@ -7048,7 +7048,7 @@ to {
       var action = item.dataset.action;
       var tab = item.dataset.tab;
       if (action === 'theme') { toggleTheme(); return; }
-      if (action === 'home') { window.location.href = '/'; return; }
+      if (action === 'home') { window.location.href = 'https://rushia.eu.org'; return; }
       if (action === 'logout') { logout(); return; }
       // 功能项需要登录后才可操作
       if (!document.body.classList.contains('logged-in')) return;
@@ -7102,7 +7102,7 @@ to {
   });
 
   /* ==================== 自定义登录 / 自动登录 / 退出登录 ==================== */
-  var FIXED_ACCOUNT = '[账号自定义]';
+  var FIXED_ACCOUNT = 'rushia';
   var _loginInProgress = false;
 
   // 退出登录：清除 Twikoo 令牌并刷新页面（保留记住的密码）
