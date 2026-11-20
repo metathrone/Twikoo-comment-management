@@ -3,7 +3,7 @@
 <html lang="zh-CN" data-theme="light" data-theme-pref="dark" class=""><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>[你的网站名字] · 评论管理后台</title>
+  <title>Rushia's Blog · 评论管理后台</title>
   <link rel="stylesheet" href="https://cdn.jsdmirror.com/npm/@fortawesome/fontawesome-free@6/css/all.min.css">
   <style>
     /* ==================== 主题变量 ==================== */
@@ -5774,7 +5774,7 @@ to {
       <div class="sidebar-brand">
         <div class="brand-logo"><i class="fa-solid fa-feather-pointed"></i></div>
         <div class="brand-text">
-          <span class="title">[你的网站名字]</span>
+          <span class="title">Rushia's Blog</span>
           <span class="subtitle">评论管理后台</span>
         </div>
       </div>
@@ -5880,7 +5880,7 @@ to {
             <div class="custom-login" id="customLogin">
               <div class="custom-login-card">
                 <div class="custom-login-icon"><i class="fa-solid fa-feather-pointed"></i></div>
-                <h2 class="custom-login-title">[你的网站名字] 评论管理</h2>
+                <h2 class="custom-login-title">Rushia's Blog 评论管理</h2>
                 <p class="custom-login-subtitle">请输入您的账号和密码</p>
                 <div class="custom-login-error" id="loginError"></div>
                 <div class="custom-input-group">
@@ -7384,10 +7384,10 @@ to {
   var _twikooInitRetrying = false;
   (function() {
     var CDN_LIST = [
-      'https://cdn.jsdelivr.net/npm/twikoo@1.7.15/dist/twikoo.min.js',
+      'https://cdn.jsdelivr.net/npm/twikoo@2.0.17/dist/twikoo.min.js',
       'https://registry.npmmirror.com/twikoo/1.7.15/files/dist/twikoo.min.js',
-      'https://s4.zstatic.net/npm/twikoo@1.7.15/dist/twikoo.min.js',
-      'https://cdn.jsdmirror.com/npm/twikoo@1.7.15/dist/twikoo.min.js'
+      'https://s4.zstatic.net/npm/twikoo@2.0.17/dist/twikoo.min.js',
+      'https://cdn.jsdmirror.com/npm/twikoo@2.0.17/dist/twikoo.min.js'
     ];
     var _cdnIndex = 0;
 
@@ -7395,7 +7395,7 @@ to {
       if (window.twikoo && typeof window.twikoo.init === 'function') {
         try {
           window.twikoo.init({
-            envId: '[twikoo环境地址]',
+            envId: 'https://comment.rushia.eu.org',
             el: '#tcomment',
             lang: 'zh-CN',
             path: window.location.pathname
@@ -7525,7 +7525,7 @@ to {
     setInterval(function() {
       var title = document.querySelector('#twikoo .tk-login-title');
       if (title && title.textContent.indexOf('Twikoo') > -1) {
-        title.textContent = "[你的网站名字] 评论管理";
+        title.textContent = "Rushia's Blog 评论管理";
       }
     }, 500);
 
